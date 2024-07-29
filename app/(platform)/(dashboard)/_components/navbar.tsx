@@ -2,6 +2,7 @@ import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
 import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
+import type { JSX } from "react";
 
 export const Navbar = () => {
   return (
