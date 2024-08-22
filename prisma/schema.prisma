@@ -11,3 +11,4 @@ model Board {
   id    String @id @default(uuid())
   title String
 }
+

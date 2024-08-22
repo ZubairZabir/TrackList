@@ -10,7 +10,7 @@ import { FormErrors } from "./form-errors";
 interface FormInputProps {
   id: string;
   label?: string;
-  type?: string;
+  type?: string; // Added the 'type' prop here
   placeholder?: string;
   required?: boolean;
   disabled?: boolean;
@@ -25,7 +25,7 @@ export const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
     {
       id,
       label,
-      propTypes,
+      type = "text", // Default type is 'text'
       placeholder,
       required,
       disabled,
