@@ -50,7 +50,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
     });
   } catch (error) {
     return {
-      error: "Failed to create board",
+      error: "Failed to create list",
     };
   }
   revalidatePath(`/board/${boardId}`);
